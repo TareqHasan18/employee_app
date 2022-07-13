@@ -30,11 +30,11 @@ public class Employee {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getLastname() {
+    public String getLastName() {
         return lastName;
     }
-    public void setLastname(String lastname) {
-        this.lastName = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
     public String getPhoneNumber() {
         return phoneNumber;

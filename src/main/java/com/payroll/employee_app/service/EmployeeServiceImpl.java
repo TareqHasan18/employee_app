@@ -22,7 +22,7 @@ public class EmployeeServiceImpl implements EmployeeService{
     public MessageResponse createEmployee(EmployeeRequest employeeRequest) {
         Employee newEmployee = new Employee();
         newEmployee.setFirstName(employeeRequest.getFirstName());
-        newEmployee.setLastname(employeeRequest.getLastname());
+        newEmployee.setLastName(employeeRequest.getLastName());
         newEmployee.setPhoneNumber(employeeRequest.getPhoneNumber());
         newEmployee.setEmail(employeeRequest.getEmail());
         newEmployee.setRole(employeeRequest.getRole());
@@ -37,7 +37,7 @@ public class EmployeeServiceImpl implements EmployeeService{
         Optional<Employee> employee = employeeRepository.findById(employeeId);
         if (employee.isPresent()){
         	employee.get().setFirstName(employeeRequest.getFirstName());
-            employee.get().setLastname(employeeRequest.getLastname());
+            employee.get().setLastName(employeeRequest.getLastName());
             employee.get().setPhoneNumber(employeeRequest.getPhoneNumber());
             employee.get().setEmail(employeeRequest.getEmail());
             employee.get().setRole(employeeRequest.getRole());
